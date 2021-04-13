@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'accounts',
     'notifications',
     'posts',
+    'postVotes',
     'knox',
     'django.contrib.admin',
     'django.contrib.auth',

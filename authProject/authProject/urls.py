@@ -6,6 +6,7 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('accounts.urls')),
     path('', include('posts.urls')),
+    path('', include('postVotes.urls')),
     path('', include('notifications.urls')),
     path('admin/', admin.site.urls),
     path('api/register/', RegisterAPI.as_view(), name='register'),
