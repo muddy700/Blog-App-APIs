@@ -6,7 +6,8 @@ from .serializers import PostSerializer
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     permission_classes = [
-        permissions.IsAuthenticated,
+        permissions.AllowAny,
+        # permissions.IsAuthenticated,
     ]
     serializer_class = PostSerializer
 
